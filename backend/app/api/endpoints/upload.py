@@ -9,7 +9,6 @@ router = APIRouter()
 UPLOAD_DIR = "data"
 SAVE_PATH = os.path.join(UPLOAD_DIR, "latest.csv")
 
-# 업로드 디렉토리 없으면 생성
 if not os.path.exists(UPLOAD_DIR):
     os.makedirs(UPLOAD_DIR)
 
